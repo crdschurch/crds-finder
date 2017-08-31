@@ -13,6 +13,6 @@ export class Group extends Findable implements IContactable {
   }
 
   contact( message: string = null): void {
-    window.alert(`${message} from ${this.type} of findable and the description is ${this.description}`);
+    window.alert(`Message: ${message} from Type: ${this.type} of findable and the description is ${this.description}`);
   }
 }

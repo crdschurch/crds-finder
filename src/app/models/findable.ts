@@ -13,6 +13,6 @@ export class Findable implements IContactable {
   }
 
   contact( message: string = null): void {
-    window.alert(`${message} from ${this.type} of findable`);
+    window.alert(`Message: ${message} from Type: ${this.type} of findable`);
   }
 }

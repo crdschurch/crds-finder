@@ -1,7 +1,7 @@
 import { Findable } from './findable';
 import { Contactable } from '../traits/contactable';
 
-@Contactable
+
 export class DecoratedGroup extends Findable {
 
   description: string;
