@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Event } from './findables/event';
-import { Group } from './findables/group';
+import { EventComponent } from './findables/event';
+import { GroupComponent } from './findables/group';
 
 @NgModule({
   imports: [],
-  declarations: [ Event, Group ],
+  declarations: [ EventComponent, GroupComponent ],
   providers: [],
-  exports: [ Event, Group ],
-  bootstrap: [ Event, Group ]
+  exports: [ EventComponent, GroupComponent ],
+  bootstrap: [ EventComponent, GroupComponent ]
 })
 export class FindablesModule {
 }
