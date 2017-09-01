@@ -1,7 +1,7 @@
 import { Owner } from './owner';
 import { IContactable } from 'app/traits/IContactable';
 
-export class Findable implements IContactable {
+export abstract class Findable {
   id: number;
   owner: Owner;
   type: string;

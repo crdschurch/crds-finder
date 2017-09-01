@@ -1,6 +1,7 @@
 import { Findable } from './findable';
 import { Owner } from './owner';
 import { IContactable } from '../traits/IContactable';
+import { log } from '../traits/logable';
 
 export class Group extends Findable implements IContactable {
   description: string;
@@ -12,7 +13,8 @@ export class Group extends Findable implements IContactable {
     this.description = $description;
   }
 
-  contact( message: string = null): void {
+  @log
+  contact(message: string = null): void {
     window.alert(`Message: ${message} from Type: ${this.type} of findable and the description is ${this.description}`);
   }
 }
